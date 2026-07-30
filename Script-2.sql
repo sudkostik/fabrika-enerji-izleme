@@ -1,8 +1,6 @@
 USE TestDB;
 
-SELECT * FROM Satislar;
 
-USE TestDB;   -- Kendi veritabani adinizla degistirin
 
 
 /* ---------- 1) Tabloyu (varsa) sil ve yeniden olustur ---------- */
