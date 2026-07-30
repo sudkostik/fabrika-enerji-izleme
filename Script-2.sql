@@ -108,25 +108,3 @@ DROP TABLE #Cikislar;
 END
 
 
-/* ============================================================
-   DOGRULAMA SORGULARI (istege bagli)
-   ============================================================ */
--- Toplam satir sayisi (beklenen: 721 saat * 15 sayac = 10.815)
-SELECT COUNT(*) AS ToplamSatir FROM dbo.SayacVerileri;
-
--- Her sayacin ilk ve son endeksi
-SELECT [Name], [Type],
-       MIN([Index]) AS IlkEndeks,
-       MAX([Index]) AS SonEndeks,
-       MAX([Index]) - MIN([Index]) AS AylikTuketim_kWh
-FROM dbo.SayacVerileri
-GROUP BY [Name], [Type]
-ORDER BY [Type], [Name];
-
--- Ilk 20 satir onizleme
-SELECT TOP 20 * FROM dbo.SayacVerileri ORDER BY [DateTime], [Type], [Name];
-
-USE TestDB;
-
-SELECT COUNT(*) AS ToplamSatir
-FROM dbo.SayacVerileri;
