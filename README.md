@@ -1,10 +1,10 @@
-# ⚡ Fabrika Enerji İzleme ve Yönetim Sistemi
+#  Fabrika Enerji İzleme ve Yönetim Sistemi
 
 Bu proje, bir endüstriyel tesisin (fabrika) ana giriş ve alt çıkış elektrik sayaçlarına ait enerji tüketim verilerinin **Microsoft SQL Server** üzerinde modellenmesi, analitik görünümlerle (SQL Views) işlenmesi ve **Grafana** üzerinde interaktif panellerle görselleştirilmesi amacıyla geliştirilmiştir.
 
 ---
 
-## 🎯 Projenin Amacı ve Kapsamı
+##  Projenin Amacı ve Kapsamı
 
 - **Kümülatif Endeks Yönetimi:** Saatlik kümülatif sayaç endekslerinden günlük net tüketimlerin (`kWh`) hesaplanması.
 - **Giriş / Çıkış Tutarlılık Analizi:** Ana giriş sayacı ile alt birimlerin (Dökümhane, Kompresörler, CNC, Chiller vb.) tüketimlerinin karşılaştırılması.
@@ -12,7 +12,7 @@ Bu proje, bir endüstriyel tesisin (fabrika) ana giriş ve alt çıkış elektri
 
 ---
 
-## 🏗️ Veri ve Sistem Mimarisi
+##  Veri ve Sistem Mimarisi
 
 ```text
                ┌────────────────────────────────────────────────────────┐
@@ -34,7 +34,7 @@ Bu proje, bir endüstriyel tesisin (fabrika) ana giriş ve alt çıkış elektri
 
 ---
 
-## 🚀 Hızlı Başlangıç (Tek Komutla Çalıştırma)
+##  Hızlı Başlangıç (Tek Komutla Çalıştırma)
 
 Projeyi bilgisayarınızda çalıştırmak için yalnızca Docker'ın yüklü olması yeterlidir.
 
@@ -59,7 +59,7 @@ Tarayıcınızdan aşağıdaki adrese gidin:
 
 ---
 
-## 📊 Grafana Dashboard Panelleri
+##  Grafana Dashboard Panelleri
 
 Dashboard içinde aşağıdaki analiz ve metrik panelleri yer almaktadır:
 
@@ -76,7 +76,7 @@ Dashboard içinde aşağıdaki analiz ve metrik panelleri yer almaktadır:
 
 ---
 
-## 🗄️ SQL Yapısı ve Görünümler
+##  SQL Yapısı ve Görünümler
 
 ### Tablo: `dbo.SayacVerileri`
 | Sütun Adı | Veri Tipi | Açıklama |
@@ -96,7 +96,7 @@ Gün geçişlerindeki (23:00 - 00:00) saat sınır hassasiyetini korumak için `
 
 ---
 
-## 🛠️ Manuel Kurulum (Docker Olmadan)
+##  Manuel Kurulum (Docker Olmadan)
 
 Eğer mevcut bir SQL Server örneğiniz varsa:
 
@@ -107,7 +107,7 @@ Eğer mevcut bir SQL Server örneğiniz varsa:
 
 ---
 
-## 💻 Kullanılan Teknolojiler
+##  Kullanılan Teknolojiler
 
 - **Veritabanı:** Microsoft SQL Server 2022
 - **Görselleştirme & Dashboard:** Grafana (v11+)
