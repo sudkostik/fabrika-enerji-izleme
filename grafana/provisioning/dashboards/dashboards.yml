@@ -1,0 +1,13 @@
+apiVersion: 1
+
+providers:
+  - name: 'Fabrika Enerji Panelleri'
+    orgId: 1
+    folder: 'Enerji İzleme'
+    folderUid: 'enerji-izleme'
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /var/lib/grafana/dashboards
+      foldersFromFilesStructure: false
